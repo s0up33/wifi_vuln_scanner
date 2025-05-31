@@ -29,8 +29,8 @@ A Linux tool that scans nearby wireless networks and ranks them based on their p
 
 Install Python dependencies:
 
-sudo apt update
-sudo apt install python3 python3-tk aircrack-ng -y
+- sudo apt update
+- sudo apt install python3 python3-tk aircrack-ng -y
 
 ---
 
