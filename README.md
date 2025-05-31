@@ -37,5 +37,5 @@ Install Python dependencies:
 ## Usage
 
 ```bash
-python3 wifi_vuln_scanner.py
+sudo python3 wifi_vuln_scanner.py
 
