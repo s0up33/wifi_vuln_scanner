@@ -29,7 +29,13 @@ A Linux tool that scans nearby wireless networks and ranks them based on their p
 
 Install Python dependencies:
 
-```bash
 sudo apt update
 sudo apt install python3 python3-tk aircrack-ng -y
+
+---
+
+## Usage
+
+```bash
+python3 wifi_vuln_scanner.py
 
