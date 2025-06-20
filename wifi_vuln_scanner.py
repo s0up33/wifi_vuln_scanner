@@ -103,20 +103,6 @@ def analyze_and_display(tree):
     finally:
         stop_monitor_mode(INTERFACE)
 
-    try:
-        start_monitor_mode(INTERFACE)
-        run_airodump(INTERFACE)
-        csv_path = get_latest_csv()
-        df = parse_csv(csv_path)
-        df["Score"] = df.apply(compute_score, axis=1)
-        df_sorted = df.sort_values(by="Score", ascending=False)
-        update_gui(tree, df_sorted)
-    except Exception as e:
-        print(f"Error: {e}")
-    finally:
-        stop_monitor_mode(INTERFACE)
-
-
 def stop_scan():
     scan_event.clear()
     stop_monitor_mode(INTERFACE)
